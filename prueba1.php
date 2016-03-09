@@ -37,5 +37,46 @@ unset($init1); //quitar el valor de la variable
  var_dump($res);
  var_dump($div);
 
+ $num=0;
+ $num+=1;
+
+ echo $num++;//1
+ echo ++$num;//3
+
+ $num -=2;
+ $num /= $float;
+
+ //STRING
+$num = 5;
+ $varString = '$num';
+ echo $varString;
+
+ $varString = " el valor de la variable num es =  $num \n";
+ echo $varString;
+
+ $varString = "otra forma de incluir variables es {$num}";
+ echo $varString;
+
+
+//imprimir varias lineas
+$stringMult = <<<'END'
+Muchas lineas
+mas lineas
+otras lineas
+END;
+
+echo $stringMult;
+
+
+//suma de strings
+echo 'este es un '.'string';
+echo 'multiples ', 'parametros ', 'en un echo';
+
+
+//CONSTANTES
+define("FOO", "algo");
+echo FOO;
+
+echo "este es el valor de la constante FOO = ".FOO;
 
 ?>
